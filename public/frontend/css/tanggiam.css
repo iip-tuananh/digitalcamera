@@ -1,0 +1,145 @@
+.custom-btn-numbers {
+    float: left;
+    box-shadow: none;
+    padding: 0;
+    border-radius: 7px;
+    border: 1px solid #6c6c79;
+    min-height: unset;
+    width: auto;
+    background-color: transparent;
+    height: auto
+}
+
+.custom-btn-numbers .btn-cts {
+    font-size: 20px;
+    line-height: 0px;
+    border: none;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    float:left;
+    color: rgb(27, 7, 7);
+    text-align: center;
+    padding: 0px;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.custom-btn-numbers .btn-cts.btn-minus {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px
+}
+
+.custom-btn-numbers .btn-cts.btn-plus {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px
+}
+.custom-btn-numbers .btn-cts.btn-plus:active{
+    background-color: orangered;
+    color: bisque;
+}
+.custom-btn-numbers .btn-cts.btn-minus:active{
+    background-color: orangered;
+    color: bisque;
+}
+.tanggiam{
+    width: 140px;
+    padding-bottom: 50px;
+}
+.custom-btn-numbers #qty {
+    height: 35px;
+    font-size: 1em;
+    margin: 0;
+    width: 35px;
+    padding: 0 2px;
+    text-align: center;
+    background: #fff;
+    min-height: unset;
+    display: block;
+    float: left;
+    box-shadow: none;
+    border-radius: 0px;
+    border: none;
+    user-select:none !important;
+}
+.dong-modal{
+    position: absolute;
+    right: 20px;
+    top:10px;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+}
+.dong-modal:hover{
+    color: red;
+}
+.dong-modal p{
+    font-weight:900 bold;
+    width: 100%;
+    height: 100%;
+    
+}
+.icon-ctt{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    top:25%;
+}
+.icon-ctt img{
+    height: 50px;
+    width: 80px;
+}
+
+.nd-modal{
+    position: absolute;
+    top:50%;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    color: green;
+    font-weight: 700;
+
+}
+.modal-thongbao{
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 200px;
+    position: relative;
+    cursor: pointer;
+    
+}
+.lopgia{
+    display: flex;
+    justify-content: center ;
+    position: absolute;
+    height: 200vw;
+    width: 100vw;
+    background-color: #00000075;
+    z-index: 2000;
+}
+@media only screen and (max-width:768px){
+    .modal-thongbao{
+        width: 400px;
+        height: 300px;
+        background-color: white;
+        border-radius: 20px;
+        margin-top: 500px;
+        position: relative;
+        cursor: pointer;
+        
+    }
+    .lopgia{
+        display: flex;
+        justify-content: center ;
+        position: absolute;
+        height: 600vw;
+        width: 100vw;
+        background-color: #00000075;
+        z-index: 2000;
+    }
+}

@@ -1,0 +1,1 @@
+<span id="TopHomepage_lbnumber">{{count($cart)}}</span>
