@@ -15,7 +15,7 @@
                   }
                </style>
             </div>
-              <div class="col-xs-12 col-md-3 custom-footer">
+              <div class="col-xs-12 col-md-5 custom-footer">
                <ul>
                   <li>
                      <i class="fa-solid fa-location-dot"></i> &nbsp;&nbsp;{{$setting->address1}}
@@ -50,7 +50,7 @@
                   <li></li>
                </ul>
             </div> 
-             <div class="col-xs-12 col-md-6">
+             <div class="col-xs-12 col-md-4">
               {!!$setting->iframe_map!!}
             </div>
          </div>

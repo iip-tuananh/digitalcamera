@@ -92,7 +92,7 @@
                <tr>
                   <td colspan="2">
                      <div class="name">
-                        <h1>Khóa Cửa Vân Tay - Camera Giám Sát - Nhà Thông Minh - Đèn Năng Lượng Mặt Trời</h1>
+                        <h1>{{$setting->webname}}</h1>
                      </div>
                   </td>
                </tr>

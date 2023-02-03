@@ -9024,7 +9024,7 @@ ul.mainmenuIT {
 
 .nav-cate ul {
     width: 100%;
-    min-height: 405px;
+    min-height: 368px;
     /* background: #fff; */
     overflow: hidden;
     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
@@ -13294,7 +13294,7 @@ th {
 
 .list-item .content .name {
     display: block;
-    height: 25px !important;
+    height: 44px !important;
     overflow: hidden;
     margin-bottom: 0
 }

@@ -122,17 +122,17 @@ export default {
             // },
           ],
         },
-        // {
-        //   icon: "mdi mdi-newspaper menu-icon",
-        //   name: "Dịch vụ",
-        //   route_name: "",
-        //   sub: [
-        //     {
-        //       name: "Danh sách ",
-        //       path: "/service",
-        //     }
-        //   ],
-        // },
+        {
+          icon: "mdi mdi-newspaper menu-icon",
+          name: "Dịch vụ",
+          route_name: "",
+          sub: [
+            {
+              name: "Danh sách ",
+              path: "/service",
+            }
+          ],
+        },
         {
           icon: "mdi mdi-newspaper menu-icon",
           name: "Trang nội dung",

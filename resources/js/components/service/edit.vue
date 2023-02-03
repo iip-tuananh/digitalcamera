@@ -138,10 +138,10 @@ export default {
         this.addService(this.objData).then(response => {
           this.loadings(false);
           this.$router.push({name:'listService'});
-          this.$success('Thêm tin tức thành công');
+          this.$success('Thêm dịch vụ thành công');
         }).catch(error => {
           this.loadings(false);
-          this.$error('Thêm tin tức thất bại');
+          this.$error('Thêm dịch vụ thất bại');
         })
       }
     },
