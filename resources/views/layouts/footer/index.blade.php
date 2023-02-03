@@ -17,9 +17,11 @@
             </div>
               <div class="col-xs-12 col-md-5 custom-footer">
                <ul>
+                  @if($setting->address1 != '')
                   <li>
                      <i class="fa-solid fa-location-dot"></i> &nbsp;&nbsp;{{$setting->address1}}
                   </li>
+                  @endif
                 
                       @if($setting->address2 != '')
                         <br>
