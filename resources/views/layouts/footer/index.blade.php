@@ -56,9 +56,7 @@
          </div>
       
          <div class="address-footer center">
-            @foreach ($servicehome as $item)
-               <a class="text-footer"href="{{route('serviceDetail',['slug'=>$item->slug])}}">&nbsp;&nbsp;&nbsp;&nbsp;{{$item->name}}</a>&nbsp;
-            @endforeach
+            @ Bản quyền thuộc về {{$setting->company}} | Cung cấp bởi <a href="https://sbtsoftware.vn/">SBT</a> 
          </div>
       </div>
    </div>
