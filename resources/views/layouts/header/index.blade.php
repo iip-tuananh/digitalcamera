@@ -115,8 +115,8 @@
          <div class="col-lg-3 col-md-3 col-sm-3">
             <div class="box-hotline">
                <div class="hotline">
-                  <div><a class="hotline-text" href="tel:{{$setting->phone1}}">{{$setting->phone1}}</a></div>
-                  <div><a class="hotline-text" href="tel:{{$setting->phone2}}">{{$setting->phone2}}</a></div>
+                  <div><i style="color:yellow"class="fa-solid fa-phone"></i>&nbsp;&nbsp;<a class="hotline-text" href="tel:{{$setting->phone1}}">{{$setting->phone1}}</a></div>
+                  <div><i style="color:yellow"class="fa-solid fa-phone"></i>&nbsp;&nbsp;<a class="hotline-text" href="tel:{{$setting->phone2}}">{{$setting->phone2}}</a></div>
                </div>
             </div>
             <div class="index-cart">
