@@ -6,41 +6,39 @@
 {{$pagecontentdetail->title}}
 @endsection
 @section('image')
-{{url(''.$banner[0]->image)}}
+
 @endsection
 @section('css')
 @endsection
 @section('js')
 @endsection
 @section('content')
-<main class="main">
-    <div class="banner-page position-relative">
-       <img src="https://sudospaces.com/phonglien-vn/2021/07/background-product-1.png" alt="{{$pagecontentdetail->title}}">
-       <div class="content-banner-page text-center position-center-auto left-0 right-0">
-          <h2>{{$pagecontentdetail->title}}</h2>
-       </div>
-    </div>
-    <div class="container">
-       <div class="breadcrumbs">
-          <ul>
-             <li><a href="{{route('home')}}">Trang chủ</a></li>
-             <li><a href="{{url()->current()}}">{{$pagecontentdetail->title}}</a></li>
-          </ul>
-       </div>
-    </div>
-    <div class="container mg-b-30">
-       <div class="row">
-          <div class="col col-lg-12">
-             <article class="single-article bg-sm-white pd-sm-30">
-                <header>
-                   <h1 class="main-title">{{$pagecontentdetail->title}}</h1>
-                </header>
-                <div class="css-content">
-                   {!!$pagecontentdetail->content!!}
-                </div>
-             </article>
-          </div>
-       </div>
-    </div>
- </main>
+<div id="main" style="height: 500px">
+
+	<div class="wrapper wrapper-breadcrumb">
+	   <div class="container">
+		  <div class="row">
+			 <div class="col-md-12">
+				<span itemscope itemtype="https://data-vocabulary.org/Breadcrumb"><a href="{{route('home')}}" itemprop="url"><span itemprop="title">Trang chủ</span></a></span> » <span itemscope itemtype="https://data-vocabulary.org/Breadcrumb"><a href="javascript:" itemprop="url"><span itemprop="title">Chính sách hỗ trợ</span></a></span>/ <span>{{$pagecontentdetail->title}}</span>
+			 </div>
+		  </div>
+	   </div>
+	</div>
+	<div class="wrapper bg-white wrapper-main-content">
+	   <div class="container">
+		  <div class="row">
+			<div class="col-md-12">
+			 <h1></h1>
+			 <h3>{{$pagecontentdetail->title}}</h3>
+			
+			 <div style="font-size: 16px">
+				{!!$pagecontentdetail->content!!}
+			 </div>
+			 <br>
+			</div>
+		</div>
+		
+	   </div>
+	</div>
+</div>
 @endsection

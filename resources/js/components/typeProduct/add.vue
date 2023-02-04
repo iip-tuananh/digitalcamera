@@ -51,10 +51,10 @@
                   />
                 </vs-select>
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <label for="exampleInputName1">Nội dung</label>
                   <TinyMce v-model="objData.content" />
-                </div>
+                </div> -->
                 <div class="form-group">
                   <label for="exampleInputName1">Trạng thái</label>
                   <vs-select v-model="objData.status"

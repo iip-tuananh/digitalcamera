@@ -15,8 +15,12 @@
                   }
                </style>
             </div>
-              <div class="col-xs-12 col-md-5 custom-footer">
+              <div class="col-xs-12 col-md-3 custom-footer">
+              
                <ul>
+                  <span style="font-size: 20px; color:yellow; ">Liên Hệ</span>
+                  <br>
+                  <br>
                   @if($setting->address1 != '')
                   <li>
                      <i class="fa-solid fa-location-dot"></i> &nbsp;&nbsp;{{$setting->address1}}
@@ -52,7 +56,17 @@
                   <li></li>
                </ul>
             </div> 
-             <div class="col-xs-12 col-md-4">
+            <div class="col-xs-12 col-md-3" style="cursor: pointer">
+               <ul>
+                  <span style="font-size: 20px; color:yellow"> Chính sách hỗ trợ</span>
+                  <br>
+                  @foreach ($helpCus as $item)
+                  <br>
+                  <a style =" color:white"href="{{route('pagecontent',['slug'=>$item->slug])}}"><li style="list-style:none">{{$item->title}}</li></a>
+                  @endforeach
+               </ul>
+             </div>
+             <div class="col-xs-12 col-md-3">
               {!!$setting->iframe_map!!}
             </div>
          </div>

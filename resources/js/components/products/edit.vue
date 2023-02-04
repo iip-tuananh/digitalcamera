@@ -136,7 +136,7 @@
                   />
                 </vs-select>
               </div>
-              <div class="form-group">
+              <!-- <div class="form-group">
                 <label>Thương hiệu sản phẩm</label>
                 <vs-select
                   class="selectExample"
@@ -151,7 +151,7 @@
                     :key="'v' + index"
                   />
                 </vs-select>
-              </div>
+              </div> -->
               <!-- <div class="form-group">
                 <label>Thuộc combo sản phẩm</label>
                 <vs-select
