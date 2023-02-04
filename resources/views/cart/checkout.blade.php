@@ -82,16 +82,19 @@ Thanh toán đơn hàng
                   <hr />
                   @php
                       $tongcong = 0;
+                      
                   @endphp
                   @foreach ($cart as $item)
                   @php
-                     $tongcong += $item['price']*$item['quantity'];
+                  $giagiam = $item['price']-($item['price']*($item['discount']/100));
+                  $tongcong += $giagiam*$item['quantity'];
                   @endphp
                   <div style="padding-top:10px">
                      <div style="width:40%;float:left">{{languageName($item['name'])}}</div>
-                     <div style="width:20%;float:left;text-align:center">{{$item['quantity']}}</div>
+                     <div style="width:20%;float:left;text-align:center">{{$item['quantity']}} &nbsp;&nbsp;x</div>
+                  
                      <div style="width:40%;float:left;text-align:center; color:red">
-                        {{number_format($item['price']*$item['quantity'],0,'','.')}} VNĐ
+                        {{number_format($giagiam,0,'','.')}} VNĐ
                      </div>
                   </div>
                   @endforeach
@@ -107,6 +110,7 @@ Thanh toán đơn hàng
                   <div class="top10px" style="color: red">
                      <div style="width:50%;float:left;font-weight:bold">Tổng tiền:</div>
                      <div style="width:50%;float:right;text-align:right"><span id="contentPage_lbtongtien" class="priceCart">{{number_format($tongcong,0,'','.')}} VNĐ</span></div>
+                     <input type="text" name="total_money" value="{{$tongcong}}" hidden>
                   </div>
                </div>
             </div>

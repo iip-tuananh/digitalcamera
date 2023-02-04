@@ -24,9 +24,8 @@
                     <vs-td v-if="tr.color == null">----</vs-td>
                     <vs-td v-if="tr.size != null">{{tr.size}}</vs-td>
                     <vs-td v-if="tr.size == null">----</vs-td>
-                    <vs-td >{{formatNumber(tr.price)}}</vs-td>
-                    <vs-td v-if="tr.discount != null">{{formatNumber(tr.price - (tr.price * (tr.discount / 100)))}}</vs-td>
-                    <vs-td v-if="tr.discount == null">{{formatNumber(tr.price)}}</vs-td>
+                    <vs-td >{{formatNumber(tr.price)}}đ</vs-td>
+                    <vs-td >{{formatNumber(tr.price-(tr.discount/100*tr.price))}}đ</vs-td>
                     <vs-td >{{tr.qty}}</vs-td>
                   </vs-tr>
                 </template>
@@ -159,11 +158,6 @@ export default {
           total_money:0,
           statu:0,
           note:"",
-          cus_name:'',
-          cus_address:'',
-          cus_email:'',
-          cus_phone:'',
-          note:'',
           promotion:'',
           transport:'',
           transport_price:0,
