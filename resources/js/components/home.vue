@@ -217,7 +217,7 @@
         </card>
       </div>
     </div>
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-md-12">
         <card>
           <h4 slot="header" class="card-title">Best Selling Products</h4>
@@ -269,7 +269,7 @@
           </div>
         </card>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>

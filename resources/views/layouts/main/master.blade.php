@@ -199,15 +199,17 @@
          <div class="item_box_chat">
             <a class="support-zalo" style="background-image:url('{{asset('frontend/imgs/zalo-message.png')}}')"  href="http://zalo.me/{{$setting->phone1}}" target="_blank" title="Chat qua Zalo"></a>
          </div>
+         <a class="pps-btn-img" href="tel:{{$setting->phone1}}" >
          <div class="item_box_chat phone">
             <div class="phonering-alo-phone1 phonering-alo-green phonering-alo-show">
                <div class="phonering-alo-ph-circle1"></div>
                <div class="phonering-alo-ph-circle-fill1"></div>
                <div class="phonering-alo-ph-img-circle1">
-                  <a class="pps-btn-img" href="tel:{{$setting->phone1}}" ></a>
+              
                </div>
             </div>
          </div>
+      </a>
       </div>
       <!-- Facebook comment and chat messenger -->
       <div id="fb-root"></div>
