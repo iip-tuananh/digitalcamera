@@ -86,7 +86,7 @@
             <div class="wrapper">
                <div class="container">
                   <div class="row">
-                     <div class="col-xs-12 col-md-3 hidden-xs hidden-sm nav-home">
+                     {{-- <div class="col-xs-12 col-md-3 hidden-xs hidden-sm nav-home">
                         <div class="nav-cate">
                            <ul>
                               @foreach ($categoryhome as $cate)
@@ -107,8 +107,8 @@
                               @endforeach
                            </ul>
                         </div>
-                     </div>
-                     <div class="col-xs-12 col-md-9 no-padding">
+                     </div> --}}
+                     <div class="col-xs-12 col-md-12 ">
                         <script type="text/javascript">
                            jQuery(document).ready(function () {
                                jQuery('.bxslider').bxSlider({
