@@ -257,13 +257,13 @@ $imgs = json_decode($product->images);
                   $img = json_decode($item->images);
                   @endphp
                   <div class="img-product">
-                     <a href="{{route('detailProduct',['cate'=>$item->cate_slug,'slug'=>$item->slug])}}}"><img src="" data-original="{{$img[0]}}" alt="{{languageName($item->name)}}" class="imgloading"></a>
+                     <a href="{{route('detailProduct',['cate'=>$item->cate_slug,'slug'=>$item->slug])}}"><img src="" data-original="{{$img[0]}}" alt="{{languageName($item->name)}}" class="imgloading"></a>
                      @if($item->discount > 0)
                      <div style='' class="percent-promotion">-{{$item->discount}}%</div>
                      @endif
                   </div>
                   <div class="content">
-                     <div class="name"><a href="{{route('detailProduct',['cate'=>$item->cate_slug,'slug'=>$item->slug])}}}">{{languageName($item->name)}}</a></div>
+                     <div class="name"><a href="{{route('detailProduct',['cate'=>$item->cate_slug,'slug'=>$item->slug])}}">{{languageName($item->name)}}</a></div>
                      <div class="limit-text-2 des">
                         {!!languageName($item->description)!!}
                      </div>
